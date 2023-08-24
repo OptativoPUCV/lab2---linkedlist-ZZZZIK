@@ -34,14 +34,12 @@ List * createList() {
   movies->head=NULL;
   movies->current=NULL;
   movies->tail=0;
-
-
-  
   return movies;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * movies) {
+  if (movies->head==NULL) exit(EXIT_FAILURE);
+  return movies->head;
 }
 
 void * nextList(List * list) {
