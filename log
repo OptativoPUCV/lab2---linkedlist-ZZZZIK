@@ -49,3 +49,17 @@ Thu 24 Aug 2023 08:51:13 PM UTC:
  tests:  1|5
 total_score: 10/70
 d5460ce
+Thu 24 Aug 2023 08:51:29 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:10: error: expected expression before ‘int’
+   42 |   return int movies->head;
+      |          ^~~
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c02ffab
