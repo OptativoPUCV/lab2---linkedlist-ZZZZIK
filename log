@@ -1,0 +1,19 @@
+Thu 24 Aug 2023 08:43:58 PM UTC: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:3: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   34 |   list->head==NULL;
+      |   ^~~~
+      |   List
+list.c:34:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:9: error: unused variable ‘movies’ [-Werror=unused-variable]
+   32 |   List* movies= (List*) malloc(sizeof(List));
+      |         ^~~~~~
+list.c:41:1: error: control reaches end of non-void function [-Werror=return-type]
+   41 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+635e0c8

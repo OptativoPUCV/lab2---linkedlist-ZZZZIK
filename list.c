@@ -29,7 +29,15 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+  List* movies= (List*) malloc(sizeof(List));
+  
+  list->head==NULL;
+  list->current==NULL;
+  list->tail=0;
+
+
+  
+  return list;
 }
 
 void * firstList(List * list) {
