@@ -39,7 +39,8 @@ List * createList() {
 
 void * firstList(List * movies) {
   if (movies->head==NULL) exit(EXIT_FAILURE);
-  return int movies->head;
+  movies->head;
+  return NULL;
 }
 
 void * nextList(List * list) {
