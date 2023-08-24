@@ -31,13 +31,13 @@ Node * createNode(void * data) {
 List * createList() {
   List* movies= (List*) malloc(sizeof(List));
   
-  list->head==NULL;
-  list->current==NULL;
-  list->tail=0;
+  movies->head==NULL;
+  movies->current==NULL;
+  movies->tail=0;
 
 
   
-  return list;
+  return movies;
 }
 
 void * firstList(List * list) {
