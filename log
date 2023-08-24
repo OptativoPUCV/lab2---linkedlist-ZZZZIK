@@ -37,3 +37,9 @@ list.c:35:9: error: ‘*movies.current’ is used uninitialized [-Werror=uniniti
 cc1: all warnings being treated as errors
 Compilation failed
 53e10cd
+Thu 24 Aug 2023 08:45:01 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+7025031
