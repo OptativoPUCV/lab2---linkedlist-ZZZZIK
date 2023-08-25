@@ -189,3 +189,14 @@ list.c:45:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 6f16f87
+Fri 25 Aug 2023 12:32:18 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+   42 |   List *list->current=list->head;
+      |             ^~
+list.c:42:13: error: expected expression before ‘->’ token
+Compilation failed
+e5a7931
