@@ -123,3 +123,13 @@ list.c:42:16: error: assignment to ‘Node *’ from incompatible pointer type �
 cc1: all warnings being treated as errors
 Compilation failed
 2887301
+Fri 25 Aug 2023 12:29:19 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:18: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   42 |   *list->current=list->head;
+      |                  ^~~~
+Compilation failed
+3385ce6
