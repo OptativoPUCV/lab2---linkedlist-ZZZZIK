@@ -511,3 +511,14 @@ list.c:98:8: error: ‘head’ undeclared (first use in this function)
       |        ^~~~
 Compilation failed
 9e760d3
+Fri 25 Aug 2023 04:36:10 AM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:98:8: error: ‘head’ undeclared (first use in this function)
+   98 |   list-head=new_node;
+      |        ^~~~
+list.c:98:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+350dadc

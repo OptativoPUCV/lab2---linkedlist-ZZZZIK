@@ -93,9 +93,9 @@ void pushFront(List * list, void * data) {
   list->head=new_node;
 
 */
-  new_nodo->next = list->head;
-  list->head->prev=new_nodo;
-  list-head=new_nodo;
+  new_node->next = list->head;
+  list->head->prev=new_node;
+  list-head=new_node;
 
   
   return;
