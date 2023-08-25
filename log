@@ -484,3 +484,9 @@ list.c:92:8: error: ‘head’ undeclared (first use in this function)
 list.c:92:8: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 822d07f
+Fri 25 Aug 2023 04:30:55 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+986ae81
