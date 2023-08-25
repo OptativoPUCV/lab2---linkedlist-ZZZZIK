@@ -39,7 +39,7 @@ List * createList() {
 
 void * firstList(List * movies) {
   if (movies->head==NULL) return NULL;
-  movies->head=movies->current;
+  movies->current=movies->head;
   
   
   return movies->current;
