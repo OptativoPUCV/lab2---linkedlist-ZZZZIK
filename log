@@ -432,3 +432,17 @@ list.c:80:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 93aa364
+Fri 25 Aug 2023 03:53:51 AM UTC: 
+ list.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:87:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   87 |   return new_node;
+      |          ^~~~~~~~
+list.c:80:6: note: declared here
+   80 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1bbaf98
