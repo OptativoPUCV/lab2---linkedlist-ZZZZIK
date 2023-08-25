@@ -81,6 +81,12 @@ void pushFront(List * list, void * data) {
   if (data==NULL) return;
   Node * new_node= createNode(data);
 
+  if (list->head==NULL){
+  //si no hay nada como head significa q esta vacia la lista
+    list->head=new_node;
+    list->tail=new_node;
+  }
+  
   list->current=list->head;
   list->head=new_node;
   new_node->prev=list->current;
