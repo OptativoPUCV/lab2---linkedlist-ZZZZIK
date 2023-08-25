@@ -308,3 +308,9 @@ Fri 25 Aug 2023 12:50:00 AM UTC:
  tests:  1|0
    [ INFO ] llamando a firstList
 397dadc
+Fri 25 Aug 2023 12:50:30 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+d0d545b
