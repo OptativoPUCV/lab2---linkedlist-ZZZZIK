@@ -359,3 +359,13 @@ Fri 25 Aug 2023 01:01:25 AM UTC:
  tests:  5|4
 total_score: 25/70
 3b47606
+Fri 25 Aug 2023 01:09:18 AM UTC: 
+ list.c | 18 +++++++++++-------
+ 1 file changed, 11 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:62:16: error: ‘Node’ has no member named ‘list’
+   62 |   list->current->list->tail;
+      |                ^~
+Compilation failed
+18f99a7
