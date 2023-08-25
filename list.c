@@ -101,18 +101,34 @@ void pushBack(List * list, void * data) {
     pushCurrent(list,data);
 }
 
+/*
+5. Programe la función `void pushCurrent(List * list, void* data)`, la cual agrega un dato a continuación del nodo apuntado por `list->current`.
+
+6. Programe la función `void* popCurrent(List * list)`, la cual elimina el nodo que está en la posición del current de la lista enlazada, y además retorna el **dato** del nodo eliminado.
+> **Nota**: El current debe quedar apuntando al nodo siguiente del eliminado.
+
+Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `popCurrent` y `pushCurrent` (búsquelas en el código).
+*/
+
+
 void pushCurrent(List * list, void * data) {
+  list->current->next->data=data;
+
 }
+
+
+
+
 
 void * popFront(List * list) {
     list->current = list->head;
     return popCurrent(list);
 }
-
 void * popBack(List * list) {
     list->current = list->tail;
     return popCurrent(list);
 }
+
 
 void * popCurrent(List * list) {
     return NULL;
