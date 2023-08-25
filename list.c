@@ -113,7 +113,14 @@ Las funciones `pushBack`, `popFront` y `popBack` se pueden implementar usando `p
 
 void pushCurrent(List * list, void * data) {
   Node* new_node=createNode(data);
+  
+  if (list->current==NULL){
+    list->head =new_node;
+    list->current=new_node;
+  }
   if (list->current->next!=NULL) list->current->next->prev=new_node;
+
+  
   new_node->next = list->current->next;
   list->current->next=new_node;
   new_node->prev=list->current;
