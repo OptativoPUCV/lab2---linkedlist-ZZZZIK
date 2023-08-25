@@ -302,3 +302,9 @@ Fri 25 Aug 2023 12:47:21 AM UTC:
  tests:  1|5
 total_score: 10/70
 e1967cf
+Fri 25 Aug 2023 12:50:00 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|0
+   [ INFO ] llamando a firstList
+397dadc
