@@ -392,3 +392,23 @@ Fri 25 Aug 2023 01:15:38 AM UTC:
  tests:  9|3
 total_score: 35/70
 c8800b6
+Fri 25 Aug 2023 01:45:12 AM UTC: 
+ list.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:82:30: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   82 |   if (new_node==NULL) return NULL;
+      |                              ^~~~
+list.c:80:6: note: declared here
+   80 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+list.c:85:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   85 |   return new_node;
+      |          ^~~~~~~~
+list.c:80:6: note: declared here
+   80 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3c38754
