@@ -40,8 +40,8 @@ List * createList() {
 void * firstList(List * list) {
   if (list->head==NULL) exit(EXIT_FAILURE);
   
-  list->head=list->current;
-
+  list->current = list->head;
+  
 }
 
 void * nextList(List * list) {
