@@ -37,12 +37,11 @@ List * createList() {
   return movies;
 }
 
-void * firstList(List * movies) {
-  if (movies->head==NULL) return NULL;
-  movies->current=movies->head;
+void * firstList(List *list) {
+  if (list->head==NULL) return NULL;
+  list->current=list->head;
   
-  
-  return movies->current;
+  return list->current;
 }
 
 void * nextList(List * list) {
