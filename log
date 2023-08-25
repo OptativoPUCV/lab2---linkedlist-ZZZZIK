@@ -473,3 +473,14 @@ Fri 25 Aug 2023 04:11:30 AM UTC:
  tests:  9|3
 total_score: 35/70
 5841c09
+Fri 25 Aug 2023 04:30:45 AM UTC: 
+ list.c | 13 ++++++++-----
+ 1 file changed, 8 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:92:8: error: ‘head’ undeclared (first use in this function)
+   92 |   list-head=new_node;
+      |        ^~~~
+list.c:92:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+822d07f
