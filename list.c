@@ -59,13 +59,14 @@ Programe las funciones `void * lastList(List * list)` y `void * prevList(List * 
 
 void * lastList(List * list) {
   if (list->tail==NULL) return NULL;
-  list->current=list->tail;
+  list->current = list->tail;
   
   return list->current->data;
+  
 }
 
 void * prevList(List * list) {
-    return NULL;
+    
 }
 
 void pushFront(List * list, void * data) {
