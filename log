@@ -330,3 +330,14 @@ Fri 25 Aug 2023 12:58:16 AM UTC:
  tests:  2|5
 total_score: 15/70
 15f8efb
+Fri 25 Aug 2023 12:59:18 AM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:52:28: error: expected ‘)’ before ‘list’
+   52 |   if (list->current || list list->current->next) return NULL;
+      |      ~                     ^~~~~
+      |                            )
+Compilation failed
+3228fc6

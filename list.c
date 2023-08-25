@@ -49,6 +49,7 @@ retorna el dato del nodo a continuación del current y actualiza el current para
 */
 
 void * nextList(List * list) {
+  if (list->current || list list->current->next) return NULL;
   list->current=list->current->next;
   
   return list->current;
