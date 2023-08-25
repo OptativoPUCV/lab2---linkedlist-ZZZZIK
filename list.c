@@ -39,8 +39,10 @@ List * createList() {
 
 void * firstList(List * list) {
   if (list->head==NULL) return NULL;
-  List *list->current=list->head;
-  
+  lista->head=lista->current;
+
+
+    
   return list->current;
 }
 

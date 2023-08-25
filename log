@@ -200,3 +200,15 @@ list.c:42:13: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attri
 list.c:42:13: error: expected expression before ‘->’ token
 Compilation failed
 e5a7931
+Fri 25 Aug 2023 12:37:48 AM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:3: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   42 |   lista->head=lista->current;
+      |   ^~~~~
+      |   list
+list.c:42:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+93c5583
