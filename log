@@ -112,3 +112,14 @@ list.c:45:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 a9a5fbb
+Fri 25 Aug 2023 12:29:06 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:16: error: assignment to ‘Node *’ from incompatible pointer type ‘Node **’ [-Werror=incompatible-pointer-types]
+   42 |   list->current=&list->head;
+      |                ^
+cc1: all warnings being treated as errors
+Compilation failed
+2887301
