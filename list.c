@@ -49,10 +49,9 @@ retorna el dato del nodo a continuación del current y actualiza el current para
 */
 
 void * nextList(List * list) {
-  list->current=list->next;
+  list->current=list->current->next;
   
-  
-  return list->current->data;
+  return list->current;
 }
 
 void * lastList(List * list) {
